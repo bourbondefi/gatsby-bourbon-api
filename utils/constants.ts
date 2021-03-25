@@ -1,9 +1,9 @@
 import { ChainId, Token } from "@pancakeswap-libs/sdk";
 
 // BEP-20 addresses.
-export const CAKE = "0xcbe73dd7E8FC74011136b837a59205801c45e6A1"; //BRRL
-export const WBNB = "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"; 
-export const DEAD = "0x000000000000000000000000000000000000dEaD";
+export const CAKE = "0xcbe73dd7E8FC74011136b837a59205801c45e6A1"; // BRRL
+export const WBNB = "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c";  // Wrapped BNB
+export const DEAD = "0x000000000000000000000000000000000000dEaD"; // Burn Address
 
 // Contract addresses.
 export const CAKE_BNB_FARM = "0xb9120b8881F577dB430966C6A8DdD0f993518295"; // BRRL-BNB

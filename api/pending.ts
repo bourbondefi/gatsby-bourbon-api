@@ -9,7 +9,7 @@ const getBalanceNumber = (balance: any, decimals = 18) => {
 };
 
 const pending = async (pid: number, address: string) => {
-  const chef = getContract(chefABI, "0x73feaa1eE314F8c655E354234017bE2193C9E24E");
+  const chef = getContract(chefABI, "0xA893176a721587Daed3575bB25906fA06dD26817"); //BRRL Masterchef
   const pending = await chef.methods.pendingCake(pid, address).call();
   const poolInfo = await chef.methods.poolInfo(pid).call();
   return {
@@ -19,7 +19,7 @@ const pending = async (pid: number, address: string) => {
 };
 
 export default async (req: NowRequest, res: NowResponse): Promise<void> => {
-  const { address = "0x0F9399FC81DaC77908A2Dde54Bb87Ee2D17a3373", pid = "1" } = req.query;
+  const { address = "0x0b6f1578773DdDA1D3722A2577bE57dA47DBEaB3", pid = "1" } = req.query; // BRRL DEPLOYER
   if (Array.isArray(pid)) {
     res.status(400).send({ error: "Parameter Incorrect" });
   } else {

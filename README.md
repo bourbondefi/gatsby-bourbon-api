@@ -1,4 +1,4 @@
-# pancake-api
+# bourbon-api
 
 Set of endpoints utilities for PancakeSwap, based on Serverless.
 
